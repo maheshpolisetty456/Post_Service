@@ -14,7 +14,7 @@ public class PostController {
 	@GetMapping("/id/{postId}")
 	public Post getPost(@PathVariable("postId") String postId) {
 
-	    System.out.println("🔥 CONTROLLER HIT WITH postId = " + postId);
+	    System.out.println(" CONTROLLER HIT WITH postId = " + postId);
 
 	    return new Post(postId, "Post Description for : " + postId);
 	}
